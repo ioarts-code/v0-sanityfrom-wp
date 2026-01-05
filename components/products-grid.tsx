@@ -98,7 +98,7 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
 
       <section className="relative z-10 mt-[25px] grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-[21px] gap-y-8 sm:gap-y-10 lg:gap-y-[40px]">
         {filteredProducts.map((product) => (
-          <Link key={product._id} href={`/products/${product.slug.current}`}>
+          <Link key={product._id} href={`/products/${product.slug.current}`} className="group">
             <article className="flex flex-col items-center w-full">
               <div className="relative flex aspect-square w-full flex-col items-start overflow-hidden bg-transparent">
                 <img
@@ -106,16 +106,15 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
                   alt={product.title}
                   className="h-full w-full object-contain"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-primary/25 opacity-0 transition-opacity hover:opacity-100" />
               </div>
-              <div className="flex w-full flex-col items-center pt-[15px] gap-1">
+              <div className="flex w-full flex-col items-center gap-1 pt-0">
                 <div className="flex h-auto flex-row items-center justify-center">
-                  <span className="font-roboto text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold uppercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground">
+                  <span className="font-roboto text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold uppercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground group-hover:text-[#FF42A4] transition-colors">
                     {normalizeCategory(product.category)}
                   </span>
                 </div>
                 <div className="flex w-full flex-col items-center px-2">
-                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-foreground text-center">
+                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-foreground text-center group-hover:text-[#FF42A4] transition-colors">
                     {product.title}
                   </h2>
                 </div>

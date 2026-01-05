@@ -50,12 +50,12 @@ export default async function ProductDetailPage({
           {/* Product Details */}
           <div className="flex flex-1 w-full max-w-[800px] flex-col items-start justify-center gap-6 sm:gap-[30px]">
             <div className="flex w-full flex-col items-start gap-4 sm:gap-[20px]">
-              <h1 className="font-roboto text-[32px] sm:text-[50px] lg:text-[81px] leading-[32px] sm:leading-[50px] lg:leading-[78px] tracking-[5px] sm:tracking-[8px] lg:tracking-[10px] text-foreground font-black lg:tracking-wide lg:tracking-wide lg:tracking-wider lg:tracking-tighter">
+              <h1 className="font-roboto text-[32px] sm:text-[50px] lg:text-[81px] font-normal leading-[32px] sm:leading-[50px] lg:leading-[78px] tracking-[5px] sm:tracking-[8px] lg:tracking-[10px] text-foreground">
                 {product.title}
               </h1>
 
               {product.content && (
-                <p className="font-roboto text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-foreground font-semibold">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-medium leading-[20px] sm:leading-[24px] text-foreground">
                   {product.content}
                 </p>
               )}
@@ -66,7 +66,7 @@ export default async function ProductDetailPage({
                 href="https://www.deviantart.com/ioartseu/gallery/all"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto hover:bg-foreground transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FF42A4] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
               >
                 <div className="flex items-center justify-center gap-3 sm:gap-4">
                   <svg
@@ -86,7 +86,7 @@ export default async function ProductDetailPage({
                 href="https://www.etsy.com/shop/ioartseu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto hover:bg-foreground transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FF42A4] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
               >
                 <div className="flex items-center justify-center gap-3 sm:gap-4">
                   <span className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-foreground group-hover:text-background group-hover:animate-pulse transition-colors font-poppins text-2xl sm:text-3xl md:text-4xl font-black">

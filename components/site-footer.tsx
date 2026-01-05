@@ -22,6 +22,7 @@ export default function SiteFooter() {
           </div>
         </div>
 
+        {/* Right section - Links and additional description */}
         <div className="flex flex-col items-center lg:items-start gap-8 lg:gap-[20px] w-full lg:w-auto lg:max-w-[893px] lg:border-l lg:border-white lg:pl-[40px]">
           <div className="flex flex-col sm:flex-row items-start justify-start gap-6 sm:gap-8 lg:gap-[40px] w-full">
             {/* Contact column */}
@@ -35,7 +36,7 @@ export default function SiteFooter() {
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-muted transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
                 >
                   contact@ioarts.se
                 </a>
@@ -50,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-muted transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-muted transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
                 >
                   Featured Projects
                 </a>
@@ -73,7 +74,7 @@ export default function SiteFooter() {
                   href="https://www.deviantart.com/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-muted transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
                 >
                   DeviantArt
                 </a>
@@ -81,7 +82,7 @@ export default function SiteFooter() {
                   href="https://www.etsy.com/shop/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-muted transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
                 >
                   Etsy
                 </a>
@@ -98,6 +99,15 @@ export default function SiteFooter() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center w-full px-4 py-6 border-t border-white">
+        <p className="font-poppins text-[14px] sm:text-[16px] font-normal text-muted text-center">
+          © {new Date().getFullYear()} Ioarts. All rights reserved.
+        </p>
+        <p className="font-poppins text-[12px] sm:text-[14px] font-normal text-[#ADADAD] text-center mt-2">
+          By ioarts in Next.js and Sanity
+        </p>
       </div>
 
       {/* Bottom border */}

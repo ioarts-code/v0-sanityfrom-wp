@@ -15,19 +15,28 @@ export default function SiteHeader({ activePage }: { activePage: "home" | "produ
         </div>
 
         <nav className="flex flex-row items-center gap-[15px] lg:gap-[20px]">
-          <a href="/" className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px]">
+          <a
+            href="/"
+            className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px] hover:text-[#FF42A4] transition-colors"
+          >
             <span className="font-poppins text-[18px] lg:text-[25px] font-semibold uppercase leading-[18px] lg:leading-[26px] text-muted">
               HOME
             </span>
             <div className={`h-[2px] w-full bg-muted ${activePage === "home" ? "" : "opacity-0"}`} />
           </a>
-          <a href="/products" className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px]">
+          <a
+            href="/products"
+            className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px] hover:text-[#FF42A4] transition-colors"
+          >
             <span className="font-poppins text-[18px] lg:text-[25px] font-semibold uppercase leading-[18px] lg:leading-[26px] text-muted">
               PRODUCTS
             </span>
             <div className={`h-[2px] w-full bg-muted ${activePage === "products" ? "" : "opacity-0"}`} />
           </a>
-          <a href="/contact" className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px]">
+          <a
+            href="/contact"
+            className="flex flex-col items-center gap-[2px] px-2 lg:px-[7px] py-2 lg:py-[15px] hover:text-[#FF42A4] transition-colors"
+          >
             <span className="font-poppins text-[18px] lg:text-[25px] font-semibold uppercase leading-[18px] lg:leading-[26px] text-muted">
               CONTACT
             </span>

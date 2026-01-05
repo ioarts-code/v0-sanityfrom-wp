@@ -76,7 +76,7 @@ export default async function ProductShowcase() {
                 </span>
               </div>
             </div>
-            <div className="relative z-10 flex h-[56px] w-full flex-col items-start overflow-hidden bg-[#3B3B3B] p-2.5 mt-2">
+            <div className="relative z-10 flex h-[56px] w-full flex-col items-start overflow-hidden bg-[#3B3B3B] p-2.5 mt-2 mb-9">
               <div className="flex h-[36px] w-full flex-col items-start justify-center">
                 <div className="relative h-[36px] w-full overflow-hidden">
                   <div className="absolute left-0 top-1/2 flex -translate-y-1/2 animate-scroll flex-row items-center gap-8 whitespace-nowrap">
