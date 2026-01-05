@@ -66,7 +66,7 @@ export default async function ProductDetailPage({
                 href="https://www.deviantart.com/ioartseu/gallery/all"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground hover:border-[#FF42A4] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
               >
                 <div className="flex items-center justify-center gap-3 sm:gap-4">
                   <svg
@@ -86,7 +86,7 @@ export default async function ProductDetailPage({
                 href="https://www.etsy.com/shop/ioartseu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground hover:border-[#FF42A4] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
               >
                 <div className="flex items-center justify-center gap-3 sm:gap-4">
                   <span className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-foreground group-hover:text-background group-hover:animate-pulse transition-colors font-poppins text-2xl sm:text-3xl md:text-4xl font-black">

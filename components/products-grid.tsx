@@ -109,7 +109,7 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
               </div>
               <div className="flex w-full flex-col items-center gap-1 pt-0">
                 <div className="flex h-auto flex-row items-center justify-center">
-                  <span className="font-roboto text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold uppercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground group-hover:text-[#FF42A4] transition-colors">
+                  <span className="font-roboto text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold lowercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground group-hover:text-[#FF42A4] transition-colors">
                     {normalizeCategory(product.category)}
                   </span>
                 </div>

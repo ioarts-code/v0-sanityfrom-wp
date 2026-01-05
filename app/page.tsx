@@ -60,10 +60,9 @@ export default async function ProductShowcase() {
             className="relative mb-2 sm:mb-5 flex h-[300px] sm:h-[400px] lg:h-[583px] w-full flex-col items-start justify-end bg-gradient-to-br from-secondary to-accent p-2 sm:p-2.5"
           >
             <div
-              className="absolute inset-0 bg-cover bg-center bg-foreground"
+              className="absolute inset-0 bg-cover lg:bg-[length:60%_auto] bg-center bg-[rgba(206,206,206,1)]"
               style={{
                 backgroundImage: `url(${getImageUrl(featuredProduct)})`,
-                backgroundPosition: "center 60%",
                 backgroundRepeat: "no-repeat",
               }}
             />
