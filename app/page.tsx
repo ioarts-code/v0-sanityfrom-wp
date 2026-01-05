@@ -29,7 +29,8 @@ export default async function ProductShowcase() {
     etsyProducts.find((p) => p.title.toLowerCase().includes("legend") && p.title.toLowerCase().includes("zelda")) ||
     etsyProducts[0]
 
-  const aviciiProduct = deviantProducts.find((p) => p.title.toLowerCase().includes("avicii")) || deviantProducts[1]
+  const aviciiProduct =
+    deviantProducts.find((p) => p.title.toLowerCase().includes("avicii")) || deviantProducts[1] || deviantProducts[0]
 
   const bottomProducts = deviantProducts.slice(0, 3)
 
@@ -38,7 +39,7 @@ export default async function ProductShowcase() {
     return product.imageUrl || "/gaming-controller.png"
   }
 
-  if (!featuredProduct || !zeldaProduct || !aviciiProduct) {
+  if (!featuredProduct || etsyProducts.length === 0 || deviantProducts.length < 3) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <p>Loading products from CMS...</p>
