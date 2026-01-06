@@ -23,7 +23,9 @@ export default async function ProductShowcase() {
     normalizeCategory(p.category).toLowerCase().includes("deviant"),
   )
 
-  const featuredProduct = deviantProducts[0]
+  const featuredProduct =
+    deviantProducts.find((p) => p.title.toLowerCase().includes("legend") && p.title.toLowerCase().includes("zelda")) ||
+    deviantProducts[0]
 
   const zeldaProduct =
     etsyProducts.find((p) => p.title.toLowerCase().includes("legend") && p.title.toLowerCase().includes("zelda")) ||
@@ -39,7 +41,7 @@ export default async function ProductShowcase() {
     return product.imageUrl || "/gaming-controller.png"
   }
 
-  if (!featuredProduct || etsyProducts.length === 0 || deviantProducts.length < 3) {
+  if (!featuredProduct || !zeldaProduct || !aviciiProduct || bottomProducts.length < 3) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <p>Loading products from CMS...</p>
@@ -52,12 +54,12 @@ export default async function ProductShowcase() {
       <SiteHeader activePage="home" />
 
       {/* Main content */}
-      <main className="flex min-h-screen flex-col items-start bg-primary p-0 sm:p-2.5 sm:py-0">
+      <main className="flex min-h-screen flex-col items-start bg-primary p-0">
         <div className="flex w-full max-w-[1920px] flex-col">
           {/* Featured product - responsive height */}
           <Link
             href={`/products/${featuredProduct.slug.current}`}
-            className="relative mb-2 sm:mb-5 flex h-[300px] sm:h-[400px] lg:h-[583px] w-full flex-col items-start justify-end bg-gradient-to-br from-secondary to-accent p-2 sm:p-2.5"
+            className="relative flex h-[300px] sm:h-[400px] lg:h-[583px] w-full flex-col items-start justify-end bg-gradient-to-br from-secondary to-accent p-2 sm:p-2.5"
           >
             <div
               className="absolute inset-0 bg-cover lg:bg-[length:60%_auto] bg-center bg-[rgba(206,206,206,1)]"
@@ -100,7 +102,7 @@ export default async function ProductShowcase() {
         </div>
 
         {/* Bottom products grid responsive - stacks on mobile, 2-col on tablet, 3-col on desktop */}
-        <div className="flex w-full max-w-[1920px] flex-col lg:flex-row items-start gap-2 sm:gap-5 self-stretch pb-10 sm:pb-[70px] pt-2 px-2 sm:pl-0 sm:pr-0 sm:pt-0">
+        <div className="flex w-full max-w-[1920px] flex-col lg:flex-row items-start gap-2 sm:gap-5 self-stretch pb-10 pt-2 sm:pt-5 px-[10px] sm:pb-0">
           {/* Left tall product */}
           <Link
             href={`/products/${aviciiProduct.slug.current}`}

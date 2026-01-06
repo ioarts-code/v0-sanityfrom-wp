@@ -54,12 +54,12 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
       <div className="z-10 flex w-full max-w-[600px] mx-auto flex-row flex-wrap items-center justify-center gap-2 sm:gap-[5px] px-2 sm:px-0">
         <button
           onClick={() => handleFilterChange("ALL")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors ${
+          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
             activeFilter === "ALL" ? "bg-muted-foreground" : "bg-primary"
           }`}
         >
           <span
-            className={`font-roboto text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
+            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
               activeFilter === "ALL" ? "text-primary-foreground" : "text-muted"
             }`}
           >
@@ -68,12 +68,12 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
         </button>
         <button
           onClick={() => handleFilterChange("deviant-vectors")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors ${
+          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
             activeFilter === "deviant-vectors" ? "bg-muted-foreground" : "bg-primary"
           }`}
         >
           <span
-            className={`font-roboto text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
+            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
               activeFilter === "deviant-vectors" ? "text-primary-foreground" : "text-muted"
             }`}
           >
@@ -82,12 +82,12 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
         </button>
         <button
           onClick={() => handleFilterChange("etsy-products")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors ${
+          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
             activeFilter === "etsy-products" ? "bg-muted-foreground" : "bg-primary"
           }`}
         >
           <span
-            className={`font-roboto text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
+            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
               activeFilter === "etsy-products" ? "text-primary-foreground" : "text-muted"
             }`}
           >
@@ -104,12 +104,12 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
                 <img
                   src={getImageUrl(product) || "/placeholder.svg"}
                   alt={product.title}
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain transition-transform duration-500 ease-in-out group-hover:scale-110"
                 />
               </div>
               <div className="flex w-full flex-col items-center gap-1 pt-0">
                 <div className="flex h-auto flex-row items-center justify-center">
-                  <span className="font-roboto text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold lowercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground group-hover:text-[#FF42A4] transition-colors">
+                  <span className="font-poppins text-[14px] sm:text-[16px] lg:text-[19px] font-extrabold lowercase leading-[24px] sm:leading-[28px] lg:leading-[34px] tracking-[3px] sm:tracking-[4.2px] text-primary-foreground group-hover:text-white transition-colors">
                     {normalizeCategory(product.category)}
                   </span>
                 </div>

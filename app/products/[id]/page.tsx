@@ -50,12 +50,12 @@ export default async function ProductDetailPage({
           {/* Product Details */}
           <div className="flex flex-1 w-full max-w-[800px] flex-col items-start justify-center gap-6 sm:gap-[30px]">
             <div className="flex w-full flex-col items-start gap-4 sm:gap-[20px]">
-              <h1 className="font-roboto text-[32px] sm:text-[50px] lg:text-[81px] font-normal leading-[32px] sm:leading-[50px] lg:leading-[78px] tracking-[5px] sm:tracking-[8px] lg:tracking-[10px] text-foreground">
+              <h1 className="font-poppins text-[32px] sm:text-[50px] lg:text-[81px] font-normal leading-[32px] sm:leading-[50px] lg:leading-[78px] tracking-[5px] sm:tracking-[8px] lg:tracking-[10px] text-foreground uppercase">
                 {product.title}
               </h1>
 
               {product.content && (
-                <p className="font-roboto text-[14px] sm:text-[16px] font-medium leading-[20px] sm:leading-[24px] text-foreground">
+                <p className="font-poppins text-[14px] sm:text-[16px] font-medium leading-[20px] sm:leading-[24px] text-foreground">
                   {product.content}
                 </p>
               )}
