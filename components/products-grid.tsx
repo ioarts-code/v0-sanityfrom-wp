@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useCallback } from "react"
 
 interface Product {
   _id: string
@@ -18,22 +18,19 @@ interface ProductsGridProps {
 }
 
 export default function ProductsGrid({ products }: ProductsGridProps) {
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>(products)
-  const [activeFilter, setActiveFilter] = useState<string>("ALL")
+  const [activeFilter, setActiveFilter] = useState<string>("deviant-vectors")
 
-  const handleFilterChange = (filter: string) => {
+  const handleFilterChange = useCallback((filter: string) => {
     setActiveFilter(filter)
+  }, [])
 
-    if (filter === "ALL") {
-      setFilteredProducts(products)
-    } else {
-      const filtered = products.filter((product) => {
-        const category = Array.isArray(product.category) ? product.category[0] : product.category
-        return category === filter
-      })
-      setFilteredProducts(filtered)
-    }
-  }
+  const filteredProducts =
+    activeFilter === "ALL"
+      ? products
+      : products.filter((product) => {
+          const category = Array.isArray(product.category) ? product.category[0] : product.category
+          return category === activeFilter
+        })
 
   const getImageUrl = (product: Product) => {
     return product.imageUrl || "/gaming-controller.png"
@@ -49,57 +46,45 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
       .toUpperCase()
   }
 
+  const FilterButton = ({ filter, label }: { filter: string; label: string }) => (
+    <button
+      type="button"
+      onClick={() => handleFilterChange(filter)}
+      className={`
+        flex min-h-[44px] sm:h-[27px] items-center justify-center rounded-[3px] 
+        px-[12px] sm:px-[15px] py-[8px] sm:py-[3px] 
+        whitespace-nowrap cursor-pointer select-none
+        transition-colors duration-200
+        touch-manipulation
+        active:scale-95
+        ${activeFilter === filter ? "bg-muted-foreground" : "bg-primary hover:bg-muted-foreground"}
+      `}
+    >
+      <span
+        className={`
+          font-poppins text-[12px] sm:text-[14px] font-semibold uppercase 
+          leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] 
+          pointer-events-none
+          ${activeFilter === filter ? "text-primary-foreground" : "text-muted"}
+        `}
+      >
+        {label}
+      </span>
+    </button>
+  )
+
   return (
     <>
       <div className="z-10 flex w-full max-w-[600px] mx-auto flex-row flex-wrap items-center justify-center gap-2 sm:gap-[5px] px-2 sm:px-0">
-        <button
-          onClick={() => handleFilterChange("ALL")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
-            activeFilter === "ALL" ? "bg-muted-foreground" : "bg-primary"
-          }`}
-        >
-          <span
-            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
-              activeFilter === "ALL" ? "text-primary-foreground" : "text-muted"
-            }`}
-          >
-            ALL
-          </span>
-        </button>
-        <button
-          onClick={() => handleFilterChange("deviant-vectors")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
-            activeFilter === "deviant-vectors" ? "bg-muted-foreground" : "bg-primary"
-          }`}
-        >
-          <span
-            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
-              activeFilter === "deviant-vectors" ? "text-primary-foreground" : "text-muted"
-            }`}
-          >
-            DEVIANT VECTORS
-          </span>
-        </button>
-        <button
-          onClick={() => handleFilterChange("etsy-products")}
-          className={`flex h-[27px] items-center justify-center rounded-[3px] px-[10px] sm:px-[15px] py-[3px] whitespace-nowrap transition-colors hover:bg-muted-foreground ${
-            activeFilter === "etsy-products" ? "bg-muted-foreground" : "bg-primary"
-          }`}
-        >
-          <span
-            className={`font-poppins text-[11px] sm:text-[14px] font-semibold uppercase leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] ${
-              activeFilter === "etsy-products" ? "text-primary-foreground" : "text-muted"
-            }`}
-          >
-            ETSY PRODUCTS
-          </span>
-        </button>
+        <FilterButton filter="ALL" label="ALL" />
+        <FilterButton filter="deviant-vectors" label="DEVIANT VECTORS" />
+        <FilterButton filter="etsy-products" label="ETSY PRODUCTS" />
       </div>
 
-      <section className="relative z-10 mt-[25px] grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-[21px] gap-y-8 sm:gap-y-10 lg:gap-y-[40px]">
+      <section className="relative z-10 mt-[25px] grid w-full max-w-[1400px] mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-[21px] gap-y-8 sm:gap-y-10 lg:gap-y-[40px] py-8">
         {filteredProducts.map((product) => (
           <Link key={product._id} href={`/products/${product.slug.current}`} className="group">
-            <article className="flex flex-col items-center w-full">
+            <article className="flex flex-col items-center w-full max-w-[350px] mx-auto">
               <div className="relative flex aspect-square w-full flex-col items-start overflow-hidden bg-transparent">
                 <img
                   src={getImageUrl(product) || "/placeholder.svg"}
@@ -114,7 +99,7 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
                   </span>
                 </div>
                 <div className="flex w-full flex-col items-center px-2">
-                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-foreground text-center group-hover:text-[#FF42A4] transition-colors">
+                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-foreground text-center group-hover:text-[#FFFFFF] transition-colors">
                     {product.title}
                   </h2>
                 </div>
