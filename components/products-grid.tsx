@@ -99,7 +99,7 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
                   </span>
                 </div>
                 <div className="flex w-full flex-col items-center px-2">
-                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-foreground text-center group-hover:text-[#FFFFFF] transition-colors">
+                  <h2 className="font-poppins text-[28px] sm:text-[36px] lg:text-[48px] font-extrabold leading-[32px] sm:leading-[40px] lg:leading-[52px] text-white text-center transition-colors">
                     {product.title}
                   </h2>
                 </div>

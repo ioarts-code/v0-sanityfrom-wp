@@ -78,7 +78,7 @@ export default async function ProductShowcase() {
                 </span>
               </div>
             </div>
-            <div className="relative z-10 flex h-[56px] w-full flex-col items-start overflow-hidden bg-[#3B3B3B] p-2.5 mt-2 mb-9">
+            <div className="relative z-10 flex h-[56px] w-full flex-col items-start overflow-hidden bg-[#3B3B3B] p-2.5 mt-2 mb-9 bg-black">
               <div className="flex h-[36px] w-full flex-col items-start justify-center">
                 <div className="relative h-[36px] w-full overflow-hidden">
                   <div className="absolute left-0 top-1/2 flex -translate-y-1/2 animate-scroll flex-row items-center gap-8 whitespace-nowrap">
@@ -86,7 +86,7 @@ export default async function ProductShowcase() {
                       {Array.from({ length: 12 }).map((_, i) => (
                         <span
                           key={i}
-                          className="font-poppins text-[14px] font-semibold uppercase leading-[4px] tracking-[3.6px] text-[#CECECE]"
+                          className="font-poppins text-[14px] uppercase leading-[4px] tracking-[3.6px] text-[#CECECE] font-normal text-white"
                         >
                           I'm very happy with the product and the seller. The quality is excellent, they fit perfectly,
                           and they feel durable. The product arrived well-packaged and protected, which I really
