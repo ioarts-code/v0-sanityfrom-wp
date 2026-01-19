@@ -31,12 +31,12 @@ export default function SiteFooter() {
                 Contact
               </h3>
               <div className="flex flex-col items-start gap-3.5">
-                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400">
+                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 font-bold">
                   +46702312173
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-bold"
                 >
                   contact@ioarts.se
                 </a>
@@ -51,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-normal"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-normal"
                 >
                   Featured Projects
                 </a>
@@ -74,7 +74,7 @@ export default function SiteFooter() {
                   href="https://www.deviantart.com/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-bold"
                 >
                   DeviantArt
                 </a>
@@ -82,7 +82,7 @@ export default function SiteFooter() {
                   href="https://www.etsy.com/shop/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-bold"
                 >
                   Etsy
                 </a>
