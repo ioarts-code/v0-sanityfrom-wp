@@ -6,8 +6,8 @@ export default function SiteFooter() {
         <div className="flex flex-col gap-6 lg:gap-[30px] w-full lg:w-auto lg:max-w-[893px] items-start">
           {/* Brand name */}
           <div className="flex flex-col items-center pb-2.5 lg:pb-[10px]">
-            <div className="flex flex-col items-center py-2.5 px-9 bg-amber-500">
-              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase font-bold text-white">
+            <div className="flex flex-col items-center py-2.5 px-9 bg-amber-400">
+              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase font-semibold text-sky-100">
                 Ioarts
               </h2>
             </div>
@@ -31,12 +31,12 @@ export default function SiteFooter() {
                 Contact
               </h3>
               <div className="flex flex-col items-start gap-3.5">
-                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#BEBEBE]">
+                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400">
                   +46702312173
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
                 >
                   contact@ioarts.se
                 </a>
@@ -51,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
                 >
                   Featured Projects
                 </a>
@@ -74,7 +74,7 @@ export default function SiteFooter() {
                   href="https://www.deviantart.com/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
                 >
                   DeviantArt
                 </a>
@@ -82,7 +82,7 @@ export default function SiteFooter() {
                   href="https://www.etsy.com/shop/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-[#ADADAD] hover:text-[#FF42A4] transition-colors"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors"
                 >
                   Etsy
                 </a>

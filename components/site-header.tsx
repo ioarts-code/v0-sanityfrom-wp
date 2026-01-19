@@ -2,7 +2,7 @@ export default function SiteHeader({ activePage }: { activePage: "home" | "produ
   return (
     <header className="relative flex h-auto min-h-[80px] lg:h-[100.5px] w-full max-w-[1920px] flex-col items-center bg-primary mb-0">
       <div className="hidden lg:flex h-[40px] flex-row items-center justify-center pt-0">
-        <span className="font-roboto text-[12px] font-black uppercase leading-[12px] tracking-[4.8px] text-muted bg-amber-500 px-1.5 py-0.5 pl-2">
+        <span className="font-roboto text-[12px] font-black uppercase leading-[12px] tracking-[4.8px] px-1.5 py-0.5 pl-2 bg-amber-400 text-black">
           Get in touch
         </span>
       </div>
