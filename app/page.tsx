@@ -86,7 +86,7 @@ export default async function ProductShowcase() {
                       {Array.from({ length: 12 }).map((_, i) => (
                         <span
                           key={i}
-                          className="font-poppins text-[14px] uppercase leading-[4px] tracking-[3.6px] text-[#CECECE] font-normal text-white"
+                          className="font-poppins text-[14px] uppercase leading-[4px] tracking-[3.6px] text-[#CECECE] font-normal text-sky-50"
                         >
                           I'm very happy with the product and the seller. The quality is excellent, they fit perfectly,
                           and they feel durable. The product arrived well-packaged and protected, which I really

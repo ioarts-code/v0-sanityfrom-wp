@@ -7,7 +7,7 @@ export default function SiteFooter() {
           {/* Brand name */}
           <div className="flex flex-col items-center pb-2.5 lg:pb-[10px]">
             <div className="flex flex-col items-center py-2.5 px-9 bg-amber-400">
-              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase font-semibold text-sky-100">
+              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase text-black font-normal">
                 Ioarts
               </h2>
             </div>
@@ -31,12 +31,12 @@ export default function SiteFooter() {
                 Contact
               </h3>
               <div className="flex flex-col items-start gap-3.5">
-                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 font-bold">
+                <p className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] font-bold text-muted-foreground">
                   +46702312173
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-bold"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted-foreground"
                 >
                   contact@ioarts.se
                 </a>
@@ -51,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-normal"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-normal text-muted-foreground"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] text-amber-400 hover:text-[#FF42A4] transition-colors font-normal"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-normal text-muted-foreground"
                 >
                   Featured Projects
                 </a>
