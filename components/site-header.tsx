@@ -2,13 +2,13 @@ export default function SiteHeader({ activePage }: { activePage: "home" | "produ
   return (
     <header className="relative flex h-auto min-h-[80px] lg:h-[100.5px] w-full max-w-[1920px] flex-col items-center bg-primary mb-0">
       <div className="hidden lg:flex h-[40px] flex-row items-center justify-center pt-0">
-        <span className="font-roboto text-[12px] font-black uppercase leading-[12px] tracking-[4.8px] px-1.5 py-0.5 pl-2 bg-amber-400 text-black">
+        <span className="font-roboto text-[12px] font-black uppercase leading-[12px] tracking-[4.8px] px-1.5 py-0.5 pl-10 pb-1 pt-1 border-stone-500 border-r-0 pr-10 text-orange-50 bg-transparent">
           Get in touch
         </span>
       </div>
 
       <div className="flex h-auto lg:h-[60.5px] w-full flex-col lg:flex-row items-center justify-center lg:justify-between border-y border-primary-foreground px-4 lg:px-[40px] py-4 lg:py-0">
-        <div className="flex h-[40px] lg:h-[55px] flex-col items-center justify-center mb-3 lg:mb-0">
+        <div className="flex h-[40px] lg:h-[55px] flex-col items-center justify-center mb-3 lg:mb-0 bg-transparent">
           <span className="font-roboto text-[28px] lg:text-[40px] font-semibold uppercase leading-[28px] lg:leading-[40px] text-muted">
             IOARTS
           </span>
