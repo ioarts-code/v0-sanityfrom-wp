@@ -50,14 +50,14 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
     <button
       type="button"
       onClick={() => handleFilterChange(filter)}
-      className={`flex min-h-[44px] sm:h-[27px] items-center justify-center px-[12px] sm:px-[15px] py-[8px] sm:py-[3px] whitespace-nowrap cursor-pointer select-none touch-manipulation active:scale-95 bg-transparent border-b-2 transition-colors duration-200 ${activeFilter === filter ? "border-b-white" : "border-b-transparent hover:border-b-white"}`}
+      className={`flex min-h-[44px] sm:h-[27px] items-center justify-center px-[12px] sm:px-[15px] py-[8px] sm:py-[3px] whitespace-nowrap cursor-pointer select-none touch-manipulation active:scale-95 bg-transparent border-b-2 transition-all duration-200 hover:scale-110 ${activeFilter === filter ? "border-b-white" : "border-b-transparent hover:border-b-white"}`}
     >
       <span
         className={`
           font-poppins text-[12px] sm:text-[14px] font-semibold uppercase 
           leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] 
           pointer-events-none transition-transform duration-200
-          text-white hover:scale-110
+          text-white
         `}
       >
         {label}
