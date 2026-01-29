@@ -36,7 +36,7 @@ export default function SiteFooter() {
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted-foreground"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted-foreground"
                 >
                   contact@ioarts.se
                 </a>
@@ -51,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors text-muted-foreground font-extrabold"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors text-muted-foreground font-extrabold"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors text-muted-foreground font-extrabold"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors text-muted-foreground font-extrabold"
                 >
                   Featured Projects
                 </a>
@@ -74,7 +74,7 @@ export default function SiteFooter() {
                   href="https://www.deviantart.com/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted"
                 >
                   DeviantArt
                 </a>
@@ -82,7 +82,7 @@ export default function SiteFooter() {
                   href="https://www.etsy.com/shop/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted"
                 >
                   Etsy
                 </a>
