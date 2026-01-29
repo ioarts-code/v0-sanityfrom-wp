@@ -50,15 +50,15 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
     <button
       type="button"
       onClick={() => handleFilterChange(filter)}
-      className={`flex min-h-[44px] sm:h-[27px] items-center justify-center rounded-[3px] px-[12px] sm:px-[15px] py-[8px] sm:py-[3px] whitespace-nowrap cursor-pointer select-none transition-colors duration-200 touch-manipulation active:scale-95 bg-transparent ${activeFilter === filter ? "bg-muted-foreground" : "bg-primary hover:bg-muted-foreground"}
+      className={`flex min-h-[44px] sm:h-[27px] items-center justify-center rounded-[3px] px-[12px] sm:px-[15px] py-[8px] sm:py-[3px] whitespace-nowrap cursor-pointer select-none transition-colors duration-200 touch-manipulation active:scale-95 ${activeFilter === filter ? "bg-muted-foreground" : "bg-primary hover:bg-muted-foreground"}
       `}
     >
       <span
         className={`
           font-poppins text-[12px] sm:text-[14px] font-semibold uppercase 
           leading-[21px] tracking-[0.2em] sm:tracking-[0.3em] 
-          pointer-events-none
-          ${activeFilter === filter ? "text-primary-foreground" : "text-muted"}
+          pointer-events-none transition-colors duration-200
+          ${activeFilter === filter ? "text-primary-foreground" : "text-muted group-hover:text-primary-foreground"}
         `}
       >
         {label}
