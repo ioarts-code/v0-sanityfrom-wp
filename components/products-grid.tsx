@@ -21,16 +21,13 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
   const [activeFilter, setActiveFilter] = useState<string>("deviant-vectors")
 
   const handleFilterChange = useCallback((filter: string) => {
+    console.log("[v0] Filter changed to:", filter)
     setActiveFilter(filter)
   }, [])
 
-  const filteredProducts =
-    activeFilter === "ALL"
-      ? products
-      : products.filter((product) => {
-          const category = Array.isArray(product.category) ? product.category[0] : product.category
-          return category === activeFilter
-        })
+  const normalizeForComparison = (str: string): string => {
+    return str.toLowerCase().replace(/\s+/g, "-")
+  }
 
   const getImageUrl = (product: Product) => {
     return product.imageUrl || "/gaming-controller.png"
@@ -45,6 +42,16 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
       .join(" ")
       .toUpperCase()
   }
+
+  const filteredProducts =
+    activeFilter === "ALL"
+      ? products
+      : products.filter((product) => {
+          const category = Array.isArray(product.category) ? product.category[0] : product.category
+          const normalizedCategory = normalizeForComparison(category)
+          const matches = normalizedCategory === activeFilter
+          return matches
+        })
 
   const FilterButton = ({ filter, label }: { filter: string; label: string }) => (
     <button
