@@ -6,7 +6,7 @@ export default function SiteFooter() {
         <div className="flex flex-col gap-6 lg:gap-[30px] w-full lg:w-auto lg:max-w-[893px] items-start">
           {/* Brand name */}
           <div className="flex flex-col items-center pb-2.5 lg:pb-[10px]">
-            <div className="flex flex-col items-center py-2.5 px-9 bg-orange-300">
+            <div className="flex flex-col items-center py-2.5 px-9 bg-orange-600">
               <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase tracking-wider font-normal text-foreground">
                 Ioarts
               </h2>
