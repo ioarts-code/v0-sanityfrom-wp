@@ -6,8 +6,8 @@ export default function SiteFooter() {
         <div className="flex flex-col gap-6 lg:gap-[30px] w-full lg:w-auto lg:max-w-[893px] items-start">
           {/* Brand name */}
           <div className="flex flex-col items-center pb-2.5 lg:pb-[10px]">
-            <div className="flex flex-col items-center py-2.5 px-9 bg-orange-300">
-              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase tracking-wider text-orange-50 font-normal">
+            <div className="flex flex-col items-center py-2.5 px-9 bg-orange-600">
+              <h2 className="font-roboto text-[32px] sm:text-[40px] lg:text-[45px] leading-[32px] sm:leading-[40px] lg:leading-[45px] text-center uppercase tracking-wider font-normal text-foreground">
                 Ioarts
               </h2>
             </div>
@@ -36,7 +36,7 @@ export default function SiteFooter() {
                 </p>
                 <a
                   href="mailto:contact@ioarts.se"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted-foreground"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted-foreground"
                 >
                   contact@ioarts.se
                 </a>
@@ -51,13 +51,13 @@ export default function SiteFooter() {
               <div className="flex flex-col items-start gap-3.5">
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors text-muted-foreground font-extrabold"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors text-muted-foreground font-extrabold"
                 >
                   Latest Work
                 </a>
                 <a
                   href="#"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors text-muted-foreground font-extrabold"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors text-muted-foreground font-extrabold"
                 >
                   Featured Projects
                 </a>
@@ -74,7 +74,7 @@ export default function SiteFooter() {
                   href="https://www.deviantart.com/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted"
                 >
                   DeviantArt
                 </a>
@@ -82,7 +82,7 @@ export default function SiteFooter() {
                   href="https://www.etsy.com/shop/ioartseu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-[#FF42A4] transition-colors font-bold text-muted"
+                  className="font-roboto text-[16px] sm:text-[18px] lg:text-[20px] leading-[11px] hover:text-orange-300 transition-colors font-bold text-muted"
                 >
                   Etsy
                 </a>
