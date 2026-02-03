@@ -18,10 +18,9 @@ interface ProductsGridProps {
 }
 
 export default function ProductsGrid({ products }: ProductsGridProps) {
-  const [activeFilter, setActiveFilter] = useState<string>("deviant-vectors")
+  const [activeFilter, setActiveFilter] = useState<string>("ALL")
 
   const handleFilterChange = useCallback((filter: string) => {
-    console.log("[v0] Filter changed to:", filter)
     setActiveFilter(filter)
   }, [])
 
@@ -74,7 +73,7 @@ export default function ProductsGrid({ products }: ProductsGridProps) {
 
   return (
     <>
-      <div className="z-10 flex w-full max-w-[600px] mx-auto flex-row flex-wrap items-center justify-center gap-2 sm:gap-[5px] px-2 sm:px-0">
+      <div className="hidden z-10 flex w-full max-w-[600px] mx-auto flex-row flex-wrap items-center justify-center gap-2 sm:gap-[5px] px-2 sm:px-0">
         <FilterButton filter="ALL" label="ALL" />
         <FilterButton filter="deviant-vectors" label="DEVIANT VECTORS" />
         <FilterButton filter="etsy-products" label="ETSY PRODUCTS" />
