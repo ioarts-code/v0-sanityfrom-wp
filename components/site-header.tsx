@@ -3,7 +3,7 @@ export default function SiteHeader({ activePage }: { activePage: "home" | "produ
     <header className="relative flex h-auto min-h-[80px] lg:h-[100.5px] w-full max-w-[1920px] flex-col items-center bg-primary mb-0">
       <div className="hidden lg:flex h-[40px] flex-row items-center justify-center pt-0">
         <span className="font-roboto text-[12px] font-black uppercase leading-[12px] tracking-[4.8px] px-1.5 py-0.5 pl-10 pb-1 pt-1 border-stone-500 border-r-0 pr-10 bg-transparent text-muted">
-          Get in touch
+          Built for Sanity in V0
         </span>
       </div>
 
