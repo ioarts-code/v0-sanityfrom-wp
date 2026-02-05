@@ -61,22 +61,22 @@ export default async function ProductDetailPage({
               )}
             </div>
 
-            <div className="flex w-full flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-[20px]">
+            <div className="flex w-full flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <a
                 href="https://www.deviantart.com/ioartseu/gallery/all"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-4 sm:px-6 py-2.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation"
               >
-                <div className="flex items-center justify-center gap-3 sm:gap-4">
+                <div className="flex items-center justify-center gap-2 sm:gap-3">
                   <svg
-                    className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 fill-foreground group-hover:fill-background group-hover:animate-pulse transition-colors"
+                    className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 fill-foreground group-hover:fill-background group-hover:animate-pulse transition-colors"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M19.207 4.794l.23-.43V0H15.07l-.436.44-2.058 3.925-.646.436H4.58v5.993h4.04l.36.436-4.175 8.177-.23.43V24h4.367l.436-.44 2.058-3.925.646-.436h7.349v-5.993h-4.04l-.36-.436 4.175-8.177z" />
                   </svg>
-                  <span className="font-poppins text-foreground group-hover:text-background text-center tracking-[5px] sm:tracking-[6px] md:tracking-[3px] text-xs sm:text-sm md:text-base uppercase transition-colors font-semibold">
+                  <span className="font-poppins text-foreground group-hover:text-background text-center tracking-[4px] sm:tracking-[5px] text-xs sm:text-sm uppercase transition-colors font-semibold">
                     Vector Store
                   </span>
                 </div>
@@ -86,13 +86,13 @@ export default async function ProductDetailPage({
                 href="https://www.etsy.com/shop/ioartseu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-6 sm:px-8 py-3.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation md:px-[30px]"
+                className="border-[3px] border-foreground hover:border-[#FFFFFF] bg-transparent flex items-center justify-center px-4 sm:px-6 py-2.5 w-full sm:w-auto transition-colors rounded-none group touch-manipulation"
               >
-                <div className="flex items-center justify-center gap-3 sm:gap-4">
-                  <span className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-foreground group-hover:text-background group-hover:animate-pulse transition-colors font-poppins text-2xl sm:text-3xl md:text-4xl font-black">
+                <div className="flex items-center justify-center gap-2 sm:gap-3">
+                  <span className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center text-foreground group-hover:text-background group-hover:animate-pulse transition-colors font-poppins text-xl sm:text-2xl md:text-3xl font-black">
                     E
                   </span>
-                  <span className="font-poppins text-foreground group-hover:text-background text-center tracking-[5px] sm:tracking-[6px] md:tracking-[3px] text-xs sm:text-sm md:text-base uppercase transition-colors font-semibold">
+                  <span className="font-poppins text-foreground group-hover:text-background text-center tracking-[4px] sm:tracking-[5px] text-xs sm:text-sm uppercase transition-colors font-semibold">
                     Etsy Store
                   </span>
                 </div>
